@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $(".jump").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Brainly StyleGuide-->
+    <link rel="icon" type="image/x-icon"
+        href="https://styleguide.brainly.ph/images/favicons/brainly/favicon-0c2222f36b.ico">
+    <link href="https://styleguide.brainly.com/149.0.0/style-guide.css" rel="stylesheet" />
+    <!--End of Styleguide-->
+    <link href="css/style.css" rel="stylesheet">
+    <!--TableTop-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script type='text/javascript'>
+        var publicSpreadsheetUrl =
+            'https://docs.google.com/spreadsheets/d/1tuJMhXBAZcdIoDD66Hr9vUxL4evSXBciP6iW4QLk6VY/pubhtml';
+
+        function init() {
+            Tabletop.init({
+                key: publicSpreadsheetUrl,
+                callback: showInfo,
+                simpleSheet: true
+            })
+        }
+        window.addEventListener('DOMContentLoaded', init)
+    </script>
+    <title>Firefighter feed</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <div w3-include-html="templates/navbar.html"></div>
+    <!--Main Questions-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 subject-area" id="subject-area">
+                <div w3-include-html="templates/subjects.html"></div>
+            </div>
+
+            <div class="col-md-8">
+                <div w3-include-html="templates/qlist.html"></div>
+            </div>
+            <div class="col-md-2">
+                <div w3-include-html="templates/sidebar.html"></div>
+            </div>
+        </div>
+        <script>
+            includeHTML();
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+        <!--Brainly Scripts-->
+        <script src="https://styleguide.brainly.com/images/icons-36daf88c55.js"></script>
+        <script src="https://styleguide.brainly.com/images/subjects-icons-a01adb2d40.js"></script>
+        <script src="https://styleguide.brainly.com/images/subjects-mono-icons-341dc27120.js"></script>
+        <script src="https://styleguide.brainly.com/images/math-symbols-icons-7c9d6883f2.js"></script>
+
+        <!--Scripts-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+
+        <script src="js/backtotop.js"></script>
+        <script src="js/scoreboard.js"></script>
+        <script src="js/tabletop.js"></script>
+        <script src="js/loader.js"></script>
+
+</body>
+
+</html>
