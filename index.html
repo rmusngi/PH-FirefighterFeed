@@ -112,45 +112,8 @@
             </div>
             <div class="col-md-2">
                 <div class="data">
-                    <div
-                        class="leaderboard sg-box sg-box--no-border sg-box--full sg-box--no-min-height sg-box--with-shadow">
-                        <div class="sg-box__hole">
-                            <h2 class="sg-header-primary sg-header-primary--small"><strong>TOP DONORS</strong></h2>
-                        </div>
-                    </div>
-                    <div class="scores sg-box sg-box--no-border">
-                        <div class="sg-box__hole">
-
-                            <ol class="scoreboard">
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-                    <div class="sg-box sg-box--no-border sg-box--full sg-box--no-min-height sg-box--with-shadow">
-                        <div class="sg-box__hole"><img src="img/tree.png" height="100px" alt="">
-                            <div class="stats">
-                                <h1 class="sg-text sg-text-bit sg-text-bit--medium">Let Your Friends Know</h1>
-                                <p class="sg-text">Let your friends know you're helping students, and helping the world
-                                    become a better place</p>
-                                <p class="sg-text">At the end of each month, we will calculate the amount of answers we
-                                    get
-                                    and plant one tree for every 100 answers</p>
-                                <div class="text-center">
-                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.brainly.ph/trees"
-                                        target="_blank"><button class="sg-button sg-button--facebook share-fb"><span
-                                                class=" sg-button__icon">
-                                                <div class="sg-icon sg-icon--light sg-icon--x24"><svg
-                                                        class="sg-icon__svg">
-                                                        <use xlink:href="#icon-facebook"></use>
-                                                    </svg></div>
-                                            </span><span class="sg-button__text">SHARE ON FACEBOOK</span></button></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                   <div include-html="templates/scoreboard.html"></div>
+                    <div include-html="templates/sidebar.html"></div>
                     <div class="backtotop">
                         <button class="sg-button sg-button--secondary" id="top-btn"><span class="sg-button__text">
                                 <div class="sg-icon sg-icon--dark sg-icon--x32"><svg class="sg-icon__svg">
@@ -162,9 +125,7 @@
             </div>
         </div>
     </div>
-    <footer class="sg-footer footer-count">
-
-    </footer>
+    <div include-html="footer.html"></div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
