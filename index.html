@@ -316,31 +316,33 @@
                 </div>
             </div>
         </div>
-            <div class="col-md-8">
-                <div class="list-q" id="#qlist">
-                    <div class="question-queue">
-                    </div>
-                    <div class="sg-spinner-container" id="spinner">
-                        <div class="sg-spinner sg-spinner"></div><span class="span-loading">LOADING QUESTIONS</span>
-                    </div>
-                    <button class="sg-button-primary sg-button-primary--alt" id="loadMore">Load More</button>
+        <div class="col-md-8">
+            <div class="list-q" id="#qlist">
+                <div class="question-queue">
+                </div>
+                <div class="sg-spinner-container" id="spinner">
+                    <div class="sg-spinner sg-spinner"></div><span class="span-loading">LOADING QUESTIONS</span>
+                </div>
+                <button class="sg-button-primary sg-button-primary--alt" id="loadMore">Load More</button>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="data">
+                <div include-html="templates/leaderboard.html"></div>
+                <div include-html="templates/sidebar.html"></div>
+                <div class="backtotop">
+                    <button class="sg-button sg-button--secondary" id="top-btn"><span class="sg-button__text">
+                            <div class="sg-icon sg-icon--dark sg-icon--x32"><svg class="sg-icon__svg">
+                                    <use xlink:href="#icon-arrow_up"></use>
+                                </svg></div>
+                        </span></button>
                 </div>
             </div>
-            <div class="col-md-2">
-                <div class="data">
-                    <div include-html="templates/leaderboard.html"></div>
-                    <div include-html="templates/sidebar.html"></div>
-                    <div class="backtotop">
-                        <button class="sg-button sg-button--secondary" id="top-btn"><span class="sg-button__text">
-                                <div class="sg-icon sg-icon--dark sg-icon--x32"><svg class="sg-icon__svg">
-                                        <use xlink:href="#icon-arrow_up"></use>
-                                    </svg></div>
-                            </span></button>
-                    </div>
-                </div>
-            </div>
+        </div>
     </div>
-    <footer class="sg-footer footer-count">
+    <footer class="sg-footer footer-count"></footer>
+
+    </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
