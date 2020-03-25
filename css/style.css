@@ -76,10 +76,12 @@ button:focus {
 
 .subjects {
     margin-top: 20px;
+    text-align: right;
 }
 
 .subject-left {
     padding: 10px;
+    
 }
 
 .subject-icon {
@@ -117,7 +119,7 @@ button:focus {
 
 #loadMore {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 .answer-question a:hover { 
     color: #fff;
@@ -153,6 +155,7 @@ button:focus {
 
 }
 
+
 #top-btn.show {
     opacity: 1;
     visibility: visible;
@@ -169,6 +172,89 @@ button:focus {
 
 .share-fb a:hover, .share-fb a:active, .share-fb a {
     outline: none;
+}
+
+.footer-count {
+    position: fixed;
+    bottom: 0;
+    display: none;
+    width: 100vw;
+}
+
+.footer-count h2 {
+    margin-bottom: 10px;
+}
+
+.footer-data:nth-child(n+2) {
+    display: none;
+}
+
+.leaderboard {
+	width: 100%;
+	background-color:  #60d399!important;
+	border: none!important;
+	border-bottom-right-radius: 0px!important;
+	border-bottom-left-radius: 0px!important;
+}
+
+.scores.sg-box.sg-box--no-border {
+	background: #fff;
+}
+
+.main-area .sg-box__hole {
+	margin: auto;
+}
+.main-area h2 {
+	color: white;
+	text-transform: uppercase;
+
+}
+
+.scores {
+	margin-top: 0px!important;
+	width: 100%;
+	border-top-right-radius: 0px!important;
+    border-top-left-radius: 0px!important;
+    margin-bottom: 32px;
+}
+
+.scoreboard img {
+	display: inline;
+	margin-left: 5px;
+	margin-right: 10px;
+
+}
+
+.scoreboard a {
+	margin-right: 185px;
+	font-weight: bold;
+    color: #000;
+
+}
+
+.scoreboard li:nth-child(n+10) {
+    display: none;
+}
+
+.points{
+	float: right;
+    margin-top: -20px;
+    margin-right: 100px;
+}
+.span-loading {
+	font-size: 25px;
+	font-weight: 900;
+	margin-left: 20px;
+}
+
+.scoreboard hr {
+    width: 200px;
+    align-content: center;
+    margin-left: 0;
+}
+
+.scoreboard hr:nth-child(n+10) {
+    display: none;
 }
 /*Responsive Design*/
 
