@@ -89,6 +89,11 @@ body {
     width: 800px !important
 }
 
+.scoreboard:nth-child(6+n) {
+        display: none;
+
+}
+
 /*Responsive Design*/
 
 @media (max-width: 1024px) {
