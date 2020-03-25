@@ -3,36 +3,22 @@
 
 
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5LGX57');</script>
+        <!-- End Google Tag Manager -->
+        
+        <meta property="og:url"                content="https://blog.brainly.ph/trees" />
+
+        <meta property="og:title"              content="PLANT A TREE WITH BRAINLY" />
+        
+        <meta property="og:description"        content="Join our community's effort into saving the environment! With this initiative, Brainly will plant one tree for every 100 questions you answer from this page." />
+        
+        <meta property="og:image"              content="https://blog.brainly.ph/wp-content/uploads/2019/09/PLANT-A-TREE-WITH-BRAINLY-1.png"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
-            }
-        };
-    </script>
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
@@ -75,7 +61,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
     <script type='text/javascript'>
         var publicSpreadsheetUrl =
-            'https://docs.google.com/spreadsheets/d/1FMojb1FVxkjzWpwKUzwTAwtiiKKdEe3FnSCJT_g-6Fk/pubhtml';
+            'https://docs.google.com/spreadsheets/d/1J-hZMMCZWq9w8THOMQoi9avOhXfkhT57GjkhC6tEEeI/pubhtml';
 
         function init() {
             Tabletop.init({
@@ -86,49 +72,376 @@
         }
         window.addEventListener('DOMContentLoaded', init)
     </script>
-    <title>Firefighter feed</title>
+    <title>Plant a Tree with Brainly</title>
 </head>
-
 <body>
-    <!--navbar-->
-    <div w3-include-html="templates/navbar.html"></div>
-    <!--Main Questions-->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LGX57"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+        <div class="sg-header__content">
+            <div class="sg-header__left"><a href="index.html" class="sg-home-button"><img class="sg-home-button__logo-small"
+                        src="https://styleguide.brainly.com/images/logos/brainly-mobile-426ef8718f.svg"><img
+                        class="sg-home-button__logo-big"
+                        src="https://styleguide.brainly.com/images/logos/brainly-761d75d6ea.svg"></a></div>
+            <div class="sg-header__middle">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="jumbotron">
     <div class="container">
-        <div class="row">
-            <div class="col-md-2 subject-area" id="subject-area">
-                <div w3-include-html="templates/subjects.html"></div>
-            </div>
-
-            <div class="col-md-8">
-                <div w3-include-html="templates/qlist.html"></div>
-            </div>
-            <div class="col-md-2">
-                <div w3-include-html="templates/sidebar.html"></div>
+        <h1 class="intro sg-text-bit sg-text-bit--xlarge">PLANT A TREE <br> WITH BRAINLY</h1>
+        <h2 class="text-center plant-tree sg-text sg-text-bit sg-text-bit--small sg-text-bit--white">100 Answers = 1 Tree Planted</h2>
+        <p class="text-center sg-text description"> Join our community's effort into saving the environment! With this
+            initiative, Brainly will plant one tree for every 100 questions you answer from this page. So join us in our
+            own little way in helping Mother Earth!</p>
+        <div class="text-center">
+            <button class="cta-button sg-button sg-button--primary-mint docs-button-hovered--primary-mint"><span
+                    class="sg-button__text"><a class="jump" href="#subject-area">Start Answering!</a></span></button>
+        </div>
+    </div>
+</div>
+<!--how does it work-->
+<div class="container">
+    <h1 class="sg-text sg-text-bit sg-text-bit--medium how-it-works">How does it work?</h1>
+    <div class="row tutorial-cards">
+        <div class="col-md-4">
+            <div class="sg-box sg-box--no-border sg-box--no-min-height sg-box--with-shadow card">
+                <div class="sg-box__hole"><p class="text-center sg-text sg-text-bit sg-text-bit--small sg-text-bit--black">1. Simply answer questions from this page </div>
             </div>
         </div>
-        <script>
-            includeHTML();
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-            </script>
-        <!--Brainly Scripts-->
-        <script src="https://styleguide.brainly.com/images/icons-36daf88c55.js"></script>
-        <script src="https://styleguide.brainly.com/images/subjects-icons-a01adb2d40.js"></script>
-        <script src="https://styleguide.brainly.com/images/subjects-mono-icons-341dc27120.js"></script>
-        <script src="https://styleguide.brainly.com/images/math-symbols-icons-7c9d6883f2.js"></script>
+        <div class="col-md-4">
+            <div class="sg-box sg-box--no-border sg-box--no-min-height sg-box--with-shadow card">
+                <div class="sg-box__hole">
+                    <p class="sg-text sg-text-bit sg-text-bit--small sg-text-bit--black text-center">2. Use #AnswerForTrees hashtag in your answers
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="sg-box sg-box--no-border sg-box--no-min-height sg-box--with-shadow card">
+                <div class="sg-box__hole">
+                    <p class="sg-text sg-text-bit sg-text-bit--small sg-text-bit--black text-center">3.Spread the word! More answers = More Trees</p>
 
-        <!--Scripts-->
+                    </div>
+            </div>
+        </div>
+    <button class="share-button sg-button sg-button--primary-blue"><span
+            class="sg-button__text"><a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://blog.brainly.ph/trees"
+                target="_blank">Share on
+                Facebook</a></span></button>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-            </script>
+    
+    
+    </div>
+    </div>
+</div>
+<!--Main Questions-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 subject-area" id="subject-area">
+            <div class="subject-drop">
+                <div class="sg-select subject-select">
+                <select class="sg-select__element pick-subject" onchange="location=this.value;">
+                        <option value="index.html" selected="selected">All Subjects</option>
+                        <option value="filipino.html">Filipino</option>
+                        <option value="math.html">Math</option>
+                        <option value="ap.html">AP</option>
+                        <option value="english.html">English</option>
+                        <option value="science.html">Science</option>
+                        <option value="physics.html">Physics</option>
+                        <option value="chemistry.html">Chemistry</option>
+                        <option value="biology.html">Biology</option>
+                        <option value="history.html">History</option>
+                        <option value="geography.html">Geography</option>
+                        <option value="esp.html">ESP</option>
+                        <option value="economics.html">Economics</option>
+                        <option value="tle.html">TLE</option>
+                        <option value="int-science.html">Integrated Science</option>
+                        <option value="health.html">Health</option>
+                        <option value="art.html">Art</option>
+                        <option value="pe.html">PE</option>
+                        <option value="religion.html">Religion</option>
+                        <option value="computer.html">Computer</option>
+                    </select>
+                </div>
+            </div>
+            <div class="subjects">
+                <div class="subject-left"><a href="index.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-all"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">All subjects</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="filipino.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-language"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Filipino</div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="math.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-mathematics"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Math</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="ap.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-social-science"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">AP</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left">
+                    <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                            <use xlink:href="#icon-subject-english"></use>
+                        </svg></div>
+                    <div class="subject-name"><a href="english.html">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">English</div>
+                    </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="science.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-life-science"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Science</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="physics.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-physics"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Physics</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="chemistry.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-chemistry"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Chemistry</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="biology.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-environment"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Biology</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="history.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-history"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">History</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="geography.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-geography"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Geography</div>
+                        </div>
+                </div>
+                <div class="subject-left"><a href="esp.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-philosophy"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">ESP</div>
+                        </div>
+                </div>
+                <div class="subject-left"><a href="economics.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-economics"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Economics</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="tle.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-technology"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">TLE</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="int-science.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-science"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Int. Science</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="health.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-health"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Health </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left">
+                    <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                            <use xlink:href="#icon-subject-music"></use>
+                        </svg></div>
+                    <div class="subject-name"><a href="music.html">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Music</div>
+                    </div>
+                    </a>
+                </div>
+                <div class="subject-left">
+                    <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                            <use xlink:href="#icon-subject-art"></use>
+                        </svg></div>
+                    <div class="subject-name"><a href="art.html">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Art</div>
+                    </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="pe.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-physical-education"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">PE</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="religion.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-religion"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Religion</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="subject-left"><a href="computer.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-informatics"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Computer</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
-        <script src="js/backtotop.js"></script>
-        <script src="js/scoreboard.js"></script>
-        <script src="js/tabletop.js"></script>
-        <script src="js/loader.js"></script>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="list-q" id="#qlist">
+            <div class="question-queue">
+            </div>
+            <div class="sg-spinner-container" id="spinner">
+                <div class="sg-spinner sg-spinner"></div><span class="span-loading">LOADING QUESTIONS</span>
+            </div>
+            <button class="sg-button-primary sg-button-primary--alt" id="loadMore">Load More</button>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="data">
+                <div
+                class="leaderboard sg-box sg-box--no-border sg-box--full sg-box--no-min-height sg-box--with-shadow">
+                <div class="sg-box__hole">
+                    <h2 class="sg-header-primary sg-header-primary--small"><strong>TOP DONORS</strong></h2>
+                </div>
+            </div>
+            <div class="scores sg-box sg-box--no-border">
+                <div class="sg-box__hole">
 
+                    <ol class="scoreboard">
+
+                    </ol>
+
+                    
+                </div>
+            </div>
+            <div class="sg-box sg-box--no-border sg-box--full sg-box--no-min-height sg-box--with-shadow">
+                <div class="sg-box__hole"><img src="img/tree.png" height="100px" alt="">
+                <div class="stats"><h1 class="sg-text sg-text-bit sg-text-bit--medium">Let Your Friends Know</h1>
+                <p class="sg-text">Let your friends know you're helping students,  and helping the world become a better place</p>
+                <p class="sg-text">At the end of each month, we will calculate the amount of answers we get and plant one tree for every 100 answers</p>
+                <div class="text-center">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.brainly.ph/trees"
+                        target="_blank"><button class="sg-button sg-button--facebook share-fb"><span class=" sg-button__icon">
+                            <div class="sg-icon sg-icon--light sg-icon--x24"><svg class="sg-icon__svg">
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg></div>
+                        </span><span class="sg-button__text">SHARE ON FACEBOOK</span></button></a>
+                </div>
+                
+            </div>
+            </div>
+            </div>
+        <div class="backtotop">
+            <button class="sg-button sg-button--secondary" id="top-btn"><span class="sg-button__text">
+                    <div class="sg-icon sg-icon--dark sg-icon--x32"><svg class="sg-icon__svg">
+                            <use xlink:href="#icon-arrow_up"></use>
+                        </svg></div>
+                </span></button>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="sg-footer footer-count">
+    
+</footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!--Brainly Scripts-->
+    <script src="https://styleguide.brainly.com/images/icons-36daf88c55.js"></script>
+    <script src="https://styleguide.brainly.com/images/subjects-icons-a01adb2d40.js"></script>
+    <script src="https://styleguide.brainly.com/images/subjects-mono-icons-341dc27120.js"></script>
+    <script src="https://styleguide.brainly.com/images/math-symbols-icons-7c9d6883f2.js"></script>
+
+    <!--Scripts-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+
+    <script src="js/backtotop.js"></script>
+    <script src="js/scoreboard.js"></script>
+    <script src="js/tabletop.js"></script>
+    <script src="js/loader.js"></script>
 </body>
 
 </html>
