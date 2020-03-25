@@ -13,4 +13,6 @@ $(function () {
 });
 
 
-
+var effectTimer = setTimeout(function() {
+    $('.footer-count').fadeIn(5000);
+}, 500);
