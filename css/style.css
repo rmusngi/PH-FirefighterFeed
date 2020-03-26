@@ -17,7 +17,7 @@ button:focus {
     background: url('header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
     height: 60vh;
     border-radius: 0!important;
 
