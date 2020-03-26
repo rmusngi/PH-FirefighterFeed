@@ -184,7 +184,7 @@ button:focus {
     margin-bottom: 10px;
 }
 
-.footer-data:nth-child(n+2) {
+.current-count:nth-child(n+2) {
     display: none;
 }
 
