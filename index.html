@@ -99,55 +99,57 @@
     <!--Main Questions-->
     <div class="container">
         <div class="row">
-            <div include-html="templates/subjects.html"></div>
-        <div class="col-md-8">
-            <div class="list-q" id="#qlist">
-                <div class="question-queue">
-                </div>
-                <div class="sg-spinner-container" id="spinner">
-                    <div class="sg-spinner sg-spinner"></div><span class="span-loading">LOADING QUESTIONS</span>
-                </div>
-                <button class="sg-button-primary sg-button-primary--alt" id="loadMore">Load More</button>
+            <div class="col-md-2 subject-area" id="subject-area">
+             <div include-html="templates/subjects.html"></div>
             </div>
-        </div>
-        <div class="col-md-2">
-            <div class="data">
-                <div include-html="templates/leaderboard.html"></div>
-                <div include-html="templates/sidebar.html"></div>
-                <div class="backtotop">
-                    <button class="sg-button sg-button--secondary" id="top-btn"><span class="sg-button__text">
-                            <div class="sg-icon sg-icon--dark sg-icon--x32"><svg class="sg-icon__svg">
-                                    <use xlink:href="#icon-arrow_up"></use>
-                                </svg></div>
-                        </span></button>
+            <div class="col-md-8">
+                <div class="list-q" id="#qlist">
+                    <div class="question-queue">
+                    </div>
+                    <div class="sg-spinner-container" id="spinner">
+                        <div class="sg-spinner sg-spinner"></div><span class="span-loading">LOADING QUESTIONS</span>
+                    </div>
+                    <button class="sg-button-primary sg-button-primary--alt" id="loadMore">Load More</button>
                 </div>
             </div>
+            <div class="col-md-2">
+                <div class="data">
+                    <div include-html="templates/leaderboard.html"></div>
+                    <div include-html="templates/sidebar.html"></div>
+                    <div class="backtotop">
+                        <button class="sg-button sg-button--secondary" id="top-btn"><span class="sg-button__text">
+                                <div class="sg-icon sg-icon--dark sg-icon--x32"><svg class="sg-icon__svg">
+                                        <use xlink:href="#icon-arrow_up"></use>
+                                    </svg></div>
+                            </span></button>
+                    </div>
+                </div>
+            </div>
+            <div include-html="templates/footer.html"></div>
         </div>
-        <div include-html="templates/footer.html"></div>
-    </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+        <!--Brainly Scripts-->
+        <script src="https://styleguide.brainly.com/images/icons-36daf88c55.js"></script>
+        <script src="https://styleguide.brainly.com/images/subjects-icons-a01adb2d40.js"></script>
+        <script src="https://styleguide.brainly.com/images/subjects-mono-icons-341dc27120.js"></script>
+        <script src="https://styleguide.brainly.com/images/math-symbols-icons-7c9d6883f2.js"></script>
+
+        <!--Scripts-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+
+        <script>
+            includeHTML();
         </script>
-    <!--Brainly Scripts-->
-    <script src="https://styleguide.brainly.com/images/icons-36daf88c55.js"></script>
-    <script src="https://styleguide.brainly.com/images/subjects-icons-a01adb2d40.js"></script>
-    <script src="https://styleguide.brainly.com/images/subjects-mono-icons-341dc27120.js"></script>
-    <script src="https://styleguide.brainly.com/images/math-symbols-icons-7c9d6883f2.js"></script>
-
-    <!--Scripts-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-
-    <script>
-        includeHTML();
-    </script>
-    <script src="js/backtotop.js"></script>
-    <script src="js/scoreboard.js"></script>
-    <script src="js/tabletop.js"></script>
-    <script src="js/loader.js"></script>
+        <script src="js/backtotop.js"></script>
+        <script src="js/scoreboard.js"></script>
+        <script src="js/tabletop.js"></script>
+        <script src="js/loader.js"></script>
 </body>
 
 </html>
