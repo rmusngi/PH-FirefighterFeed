@@ -177,7 +177,6 @@ button:focus {
 .footer-count {
     position: fixed;
     bottom: 0;
-    display: none;
     width: 100vw;
 }
 
