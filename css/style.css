@@ -116,6 +116,9 @@ button:focus {
     color:#000;
 }
 
+.brainly-questions .icon {
+    color:#000
+}
 .sg-spinner {
     width: 16px !important;
     height: 16px !important;
