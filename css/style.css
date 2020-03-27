@@ -112,6 +112,10 @@ button:focus {
     display: none;
 }
 
+.brainly-questions a {
+    color:#000;
+}
+
 .sg-spinner {
     width: 16px !important;
     height: 16px !important;
