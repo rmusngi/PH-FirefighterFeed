@@ -257,6 +257,7 @@ button:focus {
 .scoreboard hr:nth-child(n+10) {
     display: none;
 }
+.qlabel {display: block;}
 
 /*Responsive Design*/
 
