@@ -257,6 +257,10 @@ button:focus {
 .scoreboard hr:nth-child(n+10) {
     display: none;
 }
+
+.question-label{
+    display: block;
+}
 /*Responsive Design*/
 
 /*Laptop - 1440px*/
