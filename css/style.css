@@ -43,7 +43,8 @@ button:focus {
     color: #fff;
     font-size: 25px;
     text-align: center;
-    width: 75%;
+    width: 50%;
+    margin-left:25%;
 }
 
 .cta-button {
